@@ -1,0 +1,11 @@
+:root {
+    --primary-500: #FFBC00;
+    --primary-600: #E57D00;
+    --accent-500: #FFF8E6;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    color-scheme: light dark;
+}
