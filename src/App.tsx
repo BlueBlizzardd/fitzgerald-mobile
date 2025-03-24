@@ -1,6 +1,8 @@
 import { For } from 'solid-js'
 import './App.css'
 import { Featured } from './components/featured/featured'
+import { NavBar } from './components/navbar/navbar'
+import { Header } from './components/header/header'
 
 const featuredItems = [
     {
@@ -22,13 +24,17 @@ const featuredItems = [
 
 function App() {
     return (
-        <div class='featured-container flex flex-column'>
-            <For each={featuredItems}>
-                {(item) =>
-                    <Featured title={item.title} description={item.description} image={item.image} />
-                }
-            </For>
-        </div>
+        <>
+            <Header />
+            <div class='featured-container flex flex-column'>
+                <For each={featuredItems}>
+                    {(item) =>
+                        <Featured title={item.title} description={item.description} image={item.image} />
+                    }
+                </For>
+            </div>
+            <NavBar />
+        </>
     )
 }
 

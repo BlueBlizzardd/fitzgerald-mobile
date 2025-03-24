@@ -1,0 +1,37 @@
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: var(--accent-500);
+}
+
+.fitz-logo {
+    width: 46.64px;
+    height: 31.17px;
+}
+
+.hamburger {
+    --gap: 0.4rem;
+}
+
+.line {
+    width: 23.82px;
+    height: 2px;
+    background-color: var(--primary-600);
+}
+
+.logos {
+    >* {
+        height: 17.34px;
+    }
+
+    >:not(.fb) {
+        width: 17px;
+    }
+
+    .fb {
+        width: 9.07px;
+    }
+}

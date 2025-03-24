@@ -17,6 +17,7 @@
 
 .title {
     text-transform: uppercase;
+    align-content: center;
     background-color: var(--primary-600);
     color: var(--accent-500);
     border: 0.67px solid var(--primary-500);

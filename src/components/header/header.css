@@ -1,0 +1,24 @@
+.header {
+    padding: 3rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--accent-500);
+}
+
+.header-logos {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fitzgerald {
+    width: 109.44px;
+    height: 36.94px;
+}
+
+.ruler {
+    height: 2px;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+}
