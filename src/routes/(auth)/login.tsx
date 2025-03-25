@@ -1,14 +1,13 @@
 import { Fieldset } from "../../components/fieldset/fieldset"
+import { Input } from "../../components/input/input"
 
 export const Login = () => {
     return (
         <form action="post">
             <Fieldset>
-                <label for="user" class="label">Usuario o Tel&eacute;fono</label>
-                <input id="user" name="user" type="text" />
-                <label for="password" class="label">Contrase&ntilde;a</label>
-                <input id="password" name="password" type="password" />
-                <button>Login</button>
+                <Input name="user" type="text">Usuario o Tel&eacute;fono</Input>
+                <Input name="password" type="password">Contrase&ntilde;a</Input>
+                <button class="poppins-bold">Login</button>
             </Fieldset>
         </form>
     )
