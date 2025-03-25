@@ -1,0 +1,28 @@
+.banner {
+    width: 331.3px;
+    height: 141px;
+    margin-inline: auto;
+    border: 0.67px solid var(--primary-600);
+    border-radius: 5px;
+    background: no-repeat center url("/Banner.png"), no-repeat center linear-gradient(to left, transparent, var(--primary-600));
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner-subtitle {
+    font-size: 20.02px;
+}
+
+.banner-title {
+    font-size: 33.36px;
+}
+
+.btn-banner {
+    width: 56.49px;
+    height: 17.15px;
+    border-radius: 5px;
+    background-color: var(--accent-500);
+    color: var(--primary-600);
+    font-size: 5.91px;
+    align-content: center;
+}

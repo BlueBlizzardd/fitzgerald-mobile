@@ -36,7 +36,7 @@
 .btn-more {
     width: 62.39px;
     height: 14.01px;
-    border: 2px solid var(--accent-500);
+    border: 0.67px solid var(--accent-500);
     border-radius: 5px;
     background-color: transparent;
     font-family: "Poppins", sans-serif;

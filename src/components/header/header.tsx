@@ -1,7 +1,12 @@
-import { Component } from "solid-js";
+import { Component, createMemo } from "solid-js";
 import './header.css';
+import { useLocation } from "@solidjs/router";
+import { Banner } from "../banner/banner";
 
 export const Header: Component = () => {
+    const location = useLocation();
+    const isHome = createMemo(() => location.pathname === '/');
+
     return (
         <header class="header">
             <div class="header-logos flex">
@@ -10,6 +15,7 @@ export const Header: Component = () => {
                 <img src="" alt="" class="user" />
             </div>
             <div class="ruler"></div>
+            {isHome() ? <Banner /> : location.pathname}
         </header>
     )
 
