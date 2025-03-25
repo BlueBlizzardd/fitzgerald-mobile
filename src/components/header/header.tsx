@@ -15,7 +15,7 @@ export const Header: Component = () => {
                 <img src="" alt="" class="user" />
             </div>
             <div class="ruler"></div>
-            {isHome() ? <Banner /> : location.pathname}
+            {isHome() ? <Banner /> : <div class="location anton-regular">{location.pathname.substring(1)}</div>}
         </header>
     )
 

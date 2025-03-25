@@ -1,12 +1,21 @@
 .banner {
-    width: 331.3px;
+    justify-content: start;
+    width: 95%;
     height: 141px;
     margin-inline: auto;
+    margin-bottom: 1rem;
+    padding-block: 1.15rem;
     border: 0.67px solid var(--primary-600);
     border-radius: 5px;
-    background: no-repeat center url("/Banner.png"), no-repeat center linear-gradient(to left, transparent, var(--primary-600));
+    background: linear-gradient(to left, transparent 40%, var(--primary-600) 55%), no-repeat center url("/Banner.png");
+    background-size: cover;
     text-transform: uppercase;
     text-align: center;
+}
+
+.banner-content {
+    --gap: 0;
+    width: 45%;
 }
 
 .banner-subtitle {
@@ -20,6 +29,7 @@
 .btn-banner {
     width: 56.49px;
     height: 17.15px;
+    margin-inline: auto;
     border-radius: 5px;
     background-color: var(--accent-500);
     color: var(--primary-600);

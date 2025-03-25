@@ -1,4 +1,7 @@
 .header {
+    padding-inline: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     border-radius: 0 0 1rem 1rem;
     background-color: var(--accent-500);
 }
@@ -17,7 +20,17 @@
     height: 2px;
     width: 75%;
     margin-inline: auto;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-block: 1rem;
     background-color: black;
+
+    &:has(+.banner) {
+        margin-bottom: 2rem;
+    }
+}
+
+.location {
+    color: var(--primary-600);
+    font-size: 33.33px;
+    text-transform: uppercase;
+    text-align: center;
 }
