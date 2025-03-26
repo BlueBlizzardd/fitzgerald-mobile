@@ -1,0 +1,38 @@
+.item {
+    --gap: 0;
+}
+
+.item-title {
+    text-transform: uppercase;
+    align-content: center;
+    background-color: var(--primary-600);
+    color: var(--accent-500);
+    border-inline-end: 0.67px solid var(--primary-500);
+    border-block-end: 0.67px solid var(--primary-500);
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    padding-left: 0.95rem;
+}
+
+.item-description {
+    font-size: 8.67px;
+    padding-inline: 0.95rem;
+    padding-top: 0.95rem;
+    padding-bottom: 0.5rem;
+}
+
+.item-pricing-info {
+    grid-row: 3;
+    align-self: end;
+}
+
+.item-price {
+    font-size: 16.67px;
+}
+
+.btn-item {
+    width: 47.58px;
+    height: 25.42px;
+    background-color: var(--primary-500);
+    margin-left: auto;
+}
