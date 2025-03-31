@@ -7,6 +7,7 @@ import './index.css'
 import { Login } from './routes/(auth)/login.tsx'
 import { SignUp } from './routes/(auth)/sign-up.tsx'
 import { ContactForm } from './routes/(auth)/contact-form.tsx'
+import { Burgers } from './routes/(menus)/burgers.tsx'
 
 const root = document.getElementById('root')
 
@@ -16,5 +17,6 @@ render(() => (
         <Route path='/login' component={Login} />
         <Route path='/registrate' component={SignUp} />
         <Route path='/contacto' component={ContactForm} />
+        <Route path='/burgers' component={Burgers} />
     </Router>
 ), root!)

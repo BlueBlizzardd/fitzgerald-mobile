@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import './featured.css'
+import './items.css'
 
 type ItemProps = {
     image: string;
@@ -16,9 +16,11 @@ export const Item: Component<ItemProps> = (props) => {
             </div>
             <div class="item-title anton-regular">{props.title}</div>
             <div class="item-description poppins-regular">{props.description}</div>
-            <div class="item-pricing-info">
-                <div class="item-price anton-regular">{props.price}</div>
-                <button class="btn btn-item">Ver M&aacute;s</button>
+            <div class="item-pricing-info flex">
+                <div class="item-price anton-regular">${props.price}</div>
+                <button class="btn btn-item">
+                    <img src="/add_to_cart.png" alt="add_to_cart" />
+                </button>
             </div>
         </div>
     )

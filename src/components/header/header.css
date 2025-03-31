@@ -7,8 +7,20 @@
 }
 
 .header-logos {
+    padding-inline: 0.8rem;
     justify-content: space-between;
     align-items: center;
+}
+
+.user {
+    width: 18px;
+    height: 25px;
+}
+
+.cart {
+    width: 28px;
+    height: 25px;
+    background-color: black;
 }
 
 .fitzgerald {
@@ -18,7 +30,7 @@
 
 .ruler {
     height: 2px;
-    width: 75%;
+    width: 55%;
     margin-inline: auto;
     margin-block: 1rem;
     background-color: black;

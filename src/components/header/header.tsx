@@ -1,6 +1,6 @@
 import { Component, createMemo } from "solid-js";
 import './header.css';
-import { useLocation } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
 import { Banner } from "../banner/banner";
 
 export const Header: Component = () => {
@@ -10,9 +10,11 @@ export const Header: Component = () => {
     return (
         <header class="header">
             <div class="header-logos flex">
-                <img src="" alt="" class="cart" />
+                <img src="/cart.png" alt="cart" class="cart" />
                 <img src="/fitzgerald.png" alt="fitzgerald_logo" class="fitzgerald" />
-                <img src="" alt="" class="user" />
+                <A href="/login">
+                    <img src="/user.png" alt="user" class="user" />
+                </A>
             </div>
             <div class="ruler"></div>
             {isHome() ? <Banner /> : <div class="location anton-regular">{location.pathname.substring(1)}</div>}

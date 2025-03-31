@@ -5,11 +5,10 @@
 .item-title {
     text-transform: uppercase;
     align-content: center;
-    background-color: var(--primary-600);
     color: var(--accent-500);
     border-inline-end: 0.67px solid var(--primary-500);
     border-block-end: 0.67px solid var(--primary-500);
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 0 6px 0;
     font-size: 16px;
     padding-left: 0.95rem;
 }
@@ -27,12 +26,18 @@
 }
 
 .item-price {
+    flex-grow: 1;
+    align-self: center;
+    padding-inline: 0.95rem;
+    border-block: 0.67px solid var(--primary-500);
+    background-color: var(--primary-600);
     font-size: 16.67px;
 }
 
 .btn-item {
     width: 47.58px;
-    height: 25.42px;
-    background-color: var(--primary-500);
     margin-left: auto;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--primary-500);
 }
