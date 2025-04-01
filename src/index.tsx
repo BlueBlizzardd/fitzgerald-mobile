@@ -8,6 +8,7 @@ import { Login } from './routes/(auth)/login.tsx'
 import { SignUp } from './routes/(auth)/sign-up.tsx'
 import { ContactForm } from './routes/(auth)/contact-form.tsx'
 import { Burgers } from './routes/(menus)/burgers.tsx'
+import { ProductsLayout } from './routes/(menus)/_products-layout.tsx'
 
 const root = document.getElementById('root')
 
@@ -17,6 +18,8 @@ render(() => (
         <Route path='/login' component={Login} />
         <Route path='/registrate' component={SignUp} />
         <Route path='/contacto' component={ContactForm} />
-        <Route path='/burgers' component={Burgers} />
+        <Route component={ProductsLayout}>
+            <Route path='/burgers' component={Burgers} />
+        </Route>
     </Router>
 ), root!)

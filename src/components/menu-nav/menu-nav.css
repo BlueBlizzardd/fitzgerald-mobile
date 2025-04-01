@@ -1,0 +1,30 @@
+.menu-nav {
+    height: 20px;
+    margin-inline: auto;
+    margin-bottom: 5rem;
+    justify-content: center;
+
+    button {
+        border: none;
+        border-radius: 4px;
+        background-color: var(--accent-500);
+        color: black;
+        font-size: 10.03px;
+        text-transform: uppercase;
+        align-content: center;
+    }
+
+    button:has(> img) {
+        width: 23px;
+    }
+
+    button>img {
+        height: 12px;
+        margin-inline: auto;
+    }
+}
+
+.menu-nav-delivery {
+    padding-inline: 2rem;
+    text-box-trim: trim-both;
+}
