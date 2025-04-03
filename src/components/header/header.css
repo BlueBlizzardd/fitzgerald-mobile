@@ -17,10 +17,32 @@
     height: 25px;
 }
 
+.cart-section {
+    position: relative;
+}
+
 .cart {
     width: 28px;
     height: 25px;
     background-color: black;
+}
+
+.cart-amount {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 16px;
+    background-color: var(--primary-600);
+    color: var(--accent-500);
+    border-radius: 50%;
+    font-size: 8px;
+    align-content: center;
+    text-align: center;
+    aspect-ratio: 1;
+
+    &.hidden {
+        visibility: hidden;
+    }
 }
 
 .fitzgerald {
