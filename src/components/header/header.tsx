@@ -6,6 +6,7 @@ import './header.css';
 
 export const Header: Component = () => {
     const [cart] = useCart();
+    const amount = createMemo(() => cart.reduce((acc, curr) => acc + curr.amount, 0));
     const location = useLocation();
     const isHome = createMemo(() => location.pathname === '/');
 
@@ -13,10 +14,14 @@ export const Header: Component = () => {
         <header class="header">
             <div class="header-logos flex">
                 <div class="cart-section">
-                    <img src="/cart.png" alt="cart" class="cart" />
-                    <div class="cart-amount poppins-bold" classList={{ "hidden": cart.length ? false : true }}>{cart.length}</div>
+                    <A href="/carrito">
+                        <img src="/cart.png" alt="cart" class="cart" />
+                    </A>
+                    <div class="cart-amount poppins-bold" classList={{ "hidden": cart.length ? false : true }}>{amount()}</div>
                 </div>
-                <img src="/fitzgerald.png" alt="fitzgerald_logo" class="fitzgerald" />
+                <A href="/">
+                    <img src="/fitzgerald.png" alt="fitzgerald_logo" class="fitzgerald" />
+                </A>
                 <A href="/login">
                     <img src="/user.png" alt="user" class="user" />
                 </A>

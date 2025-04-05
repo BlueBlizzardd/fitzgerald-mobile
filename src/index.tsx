@@ -13,6 +13,7 @@ import { CartProvider } from './context/cart/cart.tsx'
 import { Extras } from './routes/(menus)/extras.tsx'
 import { Drinks } from './routes/(menus)/drinks.tsx'
 import { Desserts } from './routes/(menus)/desserts.tsx'
+import { ShoppingCart } from './routes/(payment)/shopping-cart.tsx'
 
 const root = document.getElementById('root')
 
@@ -29,6 +30,7 @@ render(() => (
                 <Route path='/bebidas' component={Drinks} />
                 <Route path='/postres' component={Desserts} />
             </Route>
+            <Route path='/carrito' component={ShoppingCart} />
         </Router>
     </CartProvider>
 ), root!)

@@ -5,9 +5,8 @@ export type CartItem = TItem & { amount: number }
 export type Shop = [
     CartItem[],
     {
-        addToCart: (item: TItem) => void,
-        updateCart: (title: string) => void,
-        removeFromCart: (title: string) => void
+        addItem: (item: TItem) => void,
+        deleteItem: (title: string) => void,
     }
 ]
 

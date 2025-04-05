@@ -6,7 +6,7 @@ import './items.css'
 type ItemProps = TItem;
 
 export const Item: Component<ItemProps> = (props) => {
-    const [_, { addToCart }] = useCart();
+    const [_, { addItem }] = useCart();
 
     return (
         <div class="item grid">
@@ -17,7 +17,7 @@ export const Item: Component<ItemProps> = (props) => {
             <div class="item-description poppins-regular">{props.description}</div>
             <div class="item-pricing-info flex">
                 <div class="item-price anton-regular">${props.price}</div>
-                <button class="btn btn-item" onClick={() => addToCart(props)}>
+                <button class="btn btn-item" onClick={() => addItem(props)}>
                     <img src="/add_to_cart.png" alt="add_to_cart" />
                 </button>
             </div>

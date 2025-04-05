@@ -40,4 +40,9 @@
     border: none;
     border-radius: 0 4px 4px 0;
     background-color: var(--primary-500);
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
 }

@@ -8,14 +8,23 @@ export const CartProvider: ParentComponent = (props) => {
     const shop: Shop = [
         cart,
         {
-            addToCart(item: TItem) {
+            addItem(item: TItem) {
+                const index = cart.findIndex(CItem => CItem.title === item.title)
+
+                if (index >= 0) {
+                    return setCart(index, "amount", (amount) => ++amount)
+                }
+
                 setCart(cart.length, { ...item, amount: 1 })
             },
-            updateCart(title: string) {
-                setCart((item) => item.title === title, "amount", (amount) => ++amount)
-            },
-            removeFromCart(title: string) {
-                setCart((cart) => cart.filter(item => item.title !== title));
+            deleteItem(title: string) {
+                const index = cart.findIndex(item => item.title === title);
+
+                if (index >= 0) {
+                    return setCart(cart => cart.splice(index, 1));
+                }
+
+                setCart((item) => item.title === title, "amount", (amount) => --amount);
             }
         }
     ];
