@@ -1,6 +1,5 @@
 import { For } from "solid-js"
 import { Item } from "../../components/items/items";
-import './burgers.css'
 
 const items = [
     {

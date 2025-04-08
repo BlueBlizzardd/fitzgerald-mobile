@@ -3,7 +3,7 @@ import { Input } from "../../components/input/input"
 
 export const SignUp = () => {
     return (
-        <form action="post">
+        <form action="/burgers">
             <Fieldset>
                 <Input name="name" type="text">Nombre y Apellido</Input>
                 <Input name="phone" type="number">Tel&eacute;fono</Input>

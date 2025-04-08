@@ -1,0 +1,11 @@
+.item-subtitle {
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 8px;
+    background-color: var(--accent-500);
+    color: var(--primary-600);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-box-trim: trim-both;
+}

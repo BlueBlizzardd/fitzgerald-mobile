@@ -29,10 +29,29 @@ const items = [
     }
 ];
 
+const wraps = [
+    {
+        title: 'Healthy',
+        description: 'Tortilla de trigo XL con guacamole, lechuga, pollo, queso feta, tomate y cebolla roja.',
+        price: 6
+    },
+    {
+        title: 'Californication',
+        description: 'Tortilla de trigo con lechuga, queso edam, nuggets de pollo, tomate, cebolla crispy, bacon y salsa Fitz.',
+        price: 6
+    }
+]
+
 export const Extras = () => {
     return (
         <div class="featured-container flex flex-column">
             <For each={items}>
+                {(item) =>
+                    <Item title={item.title} description={item.description} price={item.price} image='/Burger.png' />
+                }
+            </For>
+            <div class="item-subtitle anton-regular">Wraps</div>
+            <For each={wraps}>
                 {(item) =>
                     <Item title={item.title} description={item.description} price={item.price} image='/Burger.png' />
                 }
