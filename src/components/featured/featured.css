@@ -1,5 +1,6 @@
 .featured {
     --gap: 0;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .image-container {
@@ -16,6 +17,7 @@
 }
 
 .title {
+    grid-column: span 2;
     text-transform: uppercase;
     align-content: center;
     background-color: var(--primary-600);
@@ -27,6 +29,7 @@
 }
 
 .description {
+    grid-column: span 2;
     font-size: 8.67px;
     padding-inline: 0.95rem;
     padding-top: 0.95rem;
@@ -36,15 +39,21 @@
 .btn-more {
     width: 62.39px;
     height: 14.01px;
-    border: 0.67px solid var(--accent-500);
-    border-radius: 5px;
+    border: 1.60px solid var(--accent-500);
+    border-radius: 4px;
     background-color: transparent;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    color: var(--accent-500);
     font-size: 6.67px;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     margin-left: 0.95rem;
     grid-row: 3;
+    align-content: center;
     align-self: end;
+
+    &:hover {
+        background-color: var(--accent-500);
+        color: black;
+    }
 }

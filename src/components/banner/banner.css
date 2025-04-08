@@ -34,5 +34,12 @@
     background-color: var(--accent-500);
     color: var(--primary-600);
     font-size: 5.91px;
+    text-decoration: none;
     align-content: center;
+
+    &:hover {
+        border: 1.6px solid var(--accent-500);
+        background-color: var(--primary-600);
+        color: var(--accent-500);
+    }
 }

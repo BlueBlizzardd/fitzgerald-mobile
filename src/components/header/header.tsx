@@ -15,7 +15,7 @@ export const Header: Component = () => {
             <div class="header-logos flex">
                 <div class="cart-section">
                     <A href="/carrito">
-                        <img src="/cart.png" alt="cart" class="cart" />
+                        <img src="/cart.svg" alt="cart" class="cart" />
                     </A>
                     <div class="cart-amount poppins-bold" classList={{ "hidden": cart.length ? false : true }}>{amount()}</div>
                 </div>

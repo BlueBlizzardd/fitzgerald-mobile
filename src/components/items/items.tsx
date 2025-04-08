@@ -18,7 +18,7 @@ export const Item: Component<ItemProps> = (props) => {
             <div class="item-pricing-info flex">
                 <div class="item-price anton-regular">${props.price}</div>
                 <button class="btn btn-item" onClick={() => addItem(props)}>
-                    <img src="/add_to_cart.png" alt="add_to_cart" />
+                    <img class="add-to-cart" src="/add_to_cart.svg" alt="add_to_cart" />
                 </button>
             </div>
         </div>
