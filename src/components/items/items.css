@@ -1,8 +1,10 @@
 .item {
     --gap: 0;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .item-title {
+    grid-column: span 2;
     text-transform: uppercase;
     align-content: center;
     color: var(--accent-500);
@@ -14,6 +16,7 @@
 }
 
 .item-description {
+    grid-column: span 2;
     font-size: 8.67px;
     padding-inline: 0.95rem;
     padding-top: 0.95rem;
@@ -21,6 +24,7 @@
 }
 
 .item-pricing-info {
+    grid-column: span 2;
     grid-row: 3;
     align-self: end;
 }
