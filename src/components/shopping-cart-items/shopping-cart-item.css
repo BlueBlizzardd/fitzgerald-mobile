@@ -1,0 +1,37 @@
+.item-options {
+    background-color: var(--primary-500);
+}
+
+.item-quantity {
+    justify-content: center;
+    align-items: center;
+}
+
+.item-amount {
+    padding: 0.10rem;
+    border: 2px solid var(--accent-500);
+    font-size: 13.33px;
+}
+
+.btn-drop,
+.btn-add,
+.btn-remove {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.img-garbage {
+    width: 16px;
+    aspect-ratio: 1;
+}
+
+.img-add {
+    width: 7.5px;
+    height: 7.28px;
+}
+
+.img-minus {
+    width: 6.39px;
+    height: 1.97px;
+}

@@ -17,14 +17,21 @@ export const CartProvider: ParentComponent = (props) => {
 
                 setCart(cart.length, { ...item, amount: 1 })
             },
-            deleteItem(title: string) {
+            deleteItem(item: CartItem) {
+                if (item.amount <= 1) {
+                    const index = cart.findIndex(i => item.title === i.title);
+                    return setCart(cart => cart.splice(index, 1));
+                }
+
+                setCart((i) => i.title === item.title, "amount", (amount) => --amount);
+            },
+            dropItem(title: string) {
                 const index = cart.findIndex(item => item.title === title);
+                console.log(index)
 
                 if (index >= 0) {
                     return setCart(cart => cart.splice(index, 1));
                 }
-
-                setCart((item) => item.title === title, "amount", (amount) => --amount);
             }
         }
     ];

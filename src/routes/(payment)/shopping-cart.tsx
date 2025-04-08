@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 import { useCart } from "../../context/cart/cart"
-import { Item } from "../../components/items/items";
+import { ShoppingCartItem } from "../../components/shopping-cart-items/shopping-cart-item";
 import './shopping-cart.css'
 
 export const ShoppingCart = () => {
@@ -10,7 +10,7 @@ export const ShoppingCart = () => {
         <div class="featured-container flex flex-column">
             <For each={cart}>
                 {(item) =>
-                    <Item title={item.title} description={item.description} price={item.price} image='/Burger.png' />
+                    <ShoppingCartItem title={item.title} description={item.description} price={item.price} amount={item.amount} image='/Burger.png' />
                 }
             </For>
             <div class="pricing delivery-pricing flex anton-regular">
